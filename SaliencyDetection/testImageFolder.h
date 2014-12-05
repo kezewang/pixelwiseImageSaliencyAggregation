@@ -57,7 +57,7 @@ void detectSaliency( string imgFolder, string fileNames[], int fileCount, string
 
 	clock_t startTime = clock() ;
 
-//#pragma omp parallel for num_threads( 8 )
+#pragma omp parallel for num_threads( 4 )
 	for ( int indx = 0; indx < fileCount; indx++ )
 	{
 		string imgPath = imgFolder + fileNames[indx] ;

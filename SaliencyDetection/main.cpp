@@ -13,8 +13,8 @@ int main()
 	clock_t startTime = clock() ;
 
 	//detect Saliency on single image
-	string imgPath = "ImageDatasets\\inputImage.jpg" ;
-	testSingleImg( imgPath ) ;
+	//string imgPath = "ImageDatasets\\inputImage.jpg" ;
+	//testSingleImg( imgPath ) ;
 
 	//detect saliency on images which are in the given folder.
 	string inputFolder = "ImageDatasets\\Imgs_TCD\\" ;

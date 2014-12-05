@@ -1,5 +1,9 @@
-﻿Build started 11/14/2014 7:57:24 AM.
+﻿Build started 12/5/2014 11:30:16 AM.
+     1>Project "C:\Users\wangkeze\pixelwiseImageSaliencyAggregation\SaliencyDetection\SaliencyDetection.vcxproj" on node 2 (clean target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Release\SaliencyDetection.lastbuildstate".
+     1>Done Building Project "C:\Users\wangkeze\pixelwiseImageSaliencyAggregation\SaliencyDetection\SaliencyDetection.vcxproj" (clean target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.06
+Time Elapsed 00:00:00.04
