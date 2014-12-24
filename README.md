@@ -6,5 +6,5 @@ if you use any part of the source code, please cite related papers.
 
 If you have any question about the code, please email kezewang@gmail.com
 
-This code only test on windows 64 bit system with visual studio 2010.
+This code is only tested on windows 64 bit system with visual studio 2010.
 
