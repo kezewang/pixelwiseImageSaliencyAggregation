@@ -66,19 +66,19 @@ void getGradFeatures( Mat& magQuantized, Mat& grad, Mat& orientation, Mat& resiz
 	Rect roi( winLen, winLen, img8u.cols, img8u.rows ) ;
 	img8u.copyTo( resizedImg8u( roi ) ) ;
 
-	Mat srcUpROI = img8u( Rect( 0, 0, img8u.cols, winLen ) ) ;
+	Mat srcUpROI = img8u( Rect( 0, 0, img8u.cols, winLen ) ).clone() ;
 	flip( srcUpROI, srcUpROI, 0 ) ;
 	srcUpROI.copyTo( resizedImg8u( Rect( winLen, 0, img8u.cols, winLen ) ) ) ;
 
-	Mat srcDownROI = img8u( Rect( 0, img8u.rows - winLen, img8u.cols, winLen ) ) ;
+	Mat srcDownROI = img8u( Rect( 0, img8u.rows - winLen, img8u.cols, winLen ) ).clone() ;
 	flip( srcDownROI, srcDownROI, 0 ) ;
 	srcDownROI.copyTo( resizedImg8u( Rect( winLen, resizedImg8u.rows - winLen, img8u.cols, winLen ) ) ) ;
 
-	Mat srcLeftROI = resizedImg8u( Rect( winLen, 0, winLen, resizedImg8u.rows ) ) ;
+	Mat srcLeftROI = resizedImg8u( Rect( winLen, 0, winLen, resizedImg8u.rows ) ).clone() ;
 	flip( srcLeftROI, srcLeftROI, 1 ) ;
 	srcLeftROI.copyTo( resizedImg8u( Rect( 0, 0, winLen, resizedImg8u.rows ) ) ) ;
 
-	Mat srcRightROI = resizedImg8u( Rect( resizedImg8u.cols - 2 * winLen, 0, winLen, resizedImg8u.rows ) ) ;
+	Mat srcRightROI = resizedImg8u( Rect( resizedImg8u.cols - 2 * winLen, 0, winLen, resizedImg8u.rows ) ).clone() ;
 	flip( srcRightROI, srcRightROI, 1 ) ;
 	srcRightROI.copyTo( resizedImg8u( Rect( resizedImg8u.cols - winLen, 0, winLen, resizedImg8u.rows ) ) ) ;
 
