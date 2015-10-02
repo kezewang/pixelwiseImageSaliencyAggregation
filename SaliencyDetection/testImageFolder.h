@@ -71,7 +71,7 @@ void detectSaliency( string imgFolder, string fileNames[], int fileCount, string
 
 			string savedPath( resultFolder + fileNames[indx] ) ;
 			savedPath = savedPath.substr( 0, savedPath.find_last_of( ".jpg" ) - 3 ) ;
-			savedPath += "_CPISA" ;
+			savedPath += "_PISA" ;
 			savedPath +=  ".png" ;
 			imwrite( savedPath.c_str(), sal * 255 ) ;
 		}
@@ -83,7 +83,7 @@ void detectSaliency( string imgFolder, string fileNames[], int fileCount, string
 
 			string savedPath( resultFolder + fileNames[indx] ) ;
 			savedPath = savedPath.substr( 0, savedPath.find_last_of( ".jpg" ) - 3 ) ;
-			savedPath += "_FCPISA" ;
+			savedPath += "_FPISA" ;
 			savedPath +=  ".png" ;
 			imwrite( savedPath.c_str(), sal * 255 ) ;
 		}
@@ -102,8 +102,8 @@ void detectSaliency( string imgFolder, string fileNames[], int fileCount, string
 		imgFolder			--		the folder path of original images
 		resultFolder		--		the path to save saliency maps
 	Implementation detail:
-		1£©get all the paths of the imgFolder's images
-		2£©detect Saliency object on each given image and save the result
+		1Â£Â©get all the paths of the imgFolder's images
+		2Â£Â©detect Saliency object on each given image and save the result
 */
 void testImageFolder( string imgFolder, string resultFolder )
 {
