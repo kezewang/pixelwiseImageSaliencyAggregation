@@ -1,5 +1,5 @@
 This solution contains source code from Keze Wang's research projects: 
-http://vision.sysu.edu.cn/project/PISA/
+http://hcp.sysu.edu.cn/pixelwise-image-saliency-by-aggregation/
 
 The source code is for educational and research use only without any warranty; 
 if you use any part of the source code, please cite related paper:
