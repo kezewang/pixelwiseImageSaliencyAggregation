@@ -9,22 +9,14 @@ Keze Wang, Liang Lin, Jiangbo Lu, Chenglong Li, Keyang Shi. "PISA: Pixelwise Ima
 @ARTICLE{pisa15TIP, 
 
 	author={Keze Wang and Liang Lin and Jiangbo Lu and Chenglong Li and Keyang Shi}, 
-	
 	journal={Image Processing, IEEE Transactions on}, 
-	
 	title={PISA: Pixelwise Image Saliency by Aggregating Complementary Appearance Contrast Measures With Edge-Preserving Coherence}, 
 	year={2015}, 
-	
 	volume={24}, 
-	
 	number={10}, 
-	
 	pages={3019-3033},
-	
 	doi={10.1109/TIP.2015.2432712}, 
-	
 	ISSN={1057-7149} 
-	
 }
 
 If you have any question about the code, please email kezewang@gmail.com
